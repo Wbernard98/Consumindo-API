@@ -39,7 +39,7 @@ git clone https://github.com/Wbernard98/Consumindo-API.git
 - piadachucknoris.html - Piadas do Chuck Norris
 
 ## Estruturas
-
+```
 projeto/
 ├── js/
 │   ├── APIfilmes.js
@@ -51,3 +51,10 @@ projeto/
 ├── api.html
 ├── ApiFilm.html
 └── piadachucknoris.html
+```
+
+# 🔗 APIs utilizadas
+ - API	Descrição	Documentação
+- ViaCEP	Consulta CEPs brasileiros	viacep.com.br
+- OMDb API	Banco de dados de filmes	omdbapi.com
+- Chuck Norris Jokes	Piadas aleatórias	api.chucknorris.io
