@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/fotos-premium/icone-de-risada-reacoes-do-facebook-emoji-3d-render-simbolo-de-balao-de-midia-social-em-fundo-amarelo_41204-14361.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+}
+
+.container {
+    
+    background-image: url(https://img.freepik.com/vetores-premium/rindo-emoji-fundo-de-mensagem-de-midia-social-copie-o-espaco_95169-1323.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+#joke-display {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 15px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
+    line-height: 1.4; 
+}
+
+button {
+    background-color: #557292;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #405770; 
+}
+
+.loading {
+    color: #888;
+}

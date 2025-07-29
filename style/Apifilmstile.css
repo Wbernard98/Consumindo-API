@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* Fundo escuro */
+    background-color: #1a1a1a;
+    /* Texto claro */
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Alinha no topo */
+    min-height: 100vh;
+    /* Garante que o body ocupa a altura total da viewport */
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    /* Fundo do container ligeiramente mais claro que o body */
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 8px;
+    /* Sombra sutil para dar profundidade */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    /* Espaçamento do topo */
+}
+
+h1 {
+    text-align: center;
+    /* Cor do título vibrante, mas que combine com dark */
+    color: #00bcd4;
+    /* Azul ciano */
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px rgba(0, 188, 212, 0.4);
+    /* Sombra para o texto do título */
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+    /* Espaçamento entre input e button */
+}
+
+.search-form input[type="text"] {
+    padding: 12px 18px;
+    /* Borda sutil */
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 400px;
+    /* Fundo do input escuro */
+    background-color: #3a3a3a;
+    /* Texto do input claro */
+    color: #e0e0e0;
+    /* Placeholder com cor que se destaca, mas não brilha demais */
+    outline: none;
+    /* Remove a borda de foco padrão */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-form input[type="text"]::placeholder {
+    color: #a0a0a0;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #00bcd4;
+    /* Borda acende no foco */
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+}
+
+.search-form button {
+    padding: 12px 25px;
+    /* Cor de destaque para o botão */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    /* Efeito sutil ao passar o mouse */
+}
+
+#results {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    /* Fundo do card ligeiramente diferente */
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    /* Efeito de levitação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    /* Borda na imagem */
+}
+
+.movie-card h3 {
+    margin-top: 0;
+    color: #f0f0f0;
+    /* Título do filme claro */
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.movie-card p {
+    font-size: 0.9em;
+    color: #a0a0a0;
+    /* Texto do parágrafo mais suave */
+    margin-bottom: 0;
+}
+
+.error-message {
+    color: #ff6b6b;
+    /* Vermelho suave para erros */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
